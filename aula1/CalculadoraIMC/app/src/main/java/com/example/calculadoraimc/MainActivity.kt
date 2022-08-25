@@ -30,16 +30,16 @@ class MainActivity : AppCompatActivity() {
 
             if (imc < 18.5 ){
                 resultado.setText("Abaixo do peso")
-            }if (imc > 18.5 && imc < 24.9){
+            } else if (imc >= 18.5 && imc <= 24.9){
                 resultado.setText("Peso normal")
-            }if(imc > 25 && imc < 29.9){
+            } else if(imc >= 25 && imc <= 29.9){
                 resultado.setText("Exesso de Peso")
-            }if(imc > 30 && imc < 34.9){
-            resultado.setText("Obsidade grau 1")
-            }if(imc > 35 && imc < 39.9) {
-            resultado.setText("Obsidade grau 2")
-            }if(imc > 40 ) {
-            resultado.setText("Obsidade grau 3")
+            } else if(imc >= 30 && imc <= 34.9){
+                resultado.setText("Obsidade grau 1")
+            } else if(imc >= 35 && imc <= 39.9) {
+                resultado.setText("Obsidade grau 2")
+            } else if(imc >= 40) {
+                resultado.setText("Obsidade grau 3")
             }
         }
     }
