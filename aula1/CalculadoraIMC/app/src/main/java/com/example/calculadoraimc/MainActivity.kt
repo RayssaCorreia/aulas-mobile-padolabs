@@ -11,30 +11,37 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    val Idade = findViewById<EditText>(R.id.cmpIdade)
-    val Peso = findViewById<EditText>(R.id.cmpPeso)
-    val Altura = findViewById<EditText>(R.id.cmpAltura)
+        val idade = findViewById<EditText>(R.id.cmpIdade)
+        val peso = findViewById<EditText>(R.id.cmpPeso)
+        val altura = findViewById<EditText>(R.id.cmpAltura)
 
-    val Mulher = findViewById<Button>(R.id.btnMulher)
-    val Homem = findViewById<Button>(R.id.btnHomen)
-    val Calcular = findViewById<Button>(R.id.btnCalcular)
+        val mulher = findViewById<Button>(R.id.btnMulher)
+        val homem = findViewById<Button>(R.id.btnHomen)
+        val calcular = findViewById<Button>(R.id.btnCalcular)
 
-    val Resultado = findViewById<TextView>(R.id.campResultado)
-
-
-    Calcular.setOnClickListener {
-        val imc;
-
-    if (imc < 1.85 ){
-        Resultado.setText("Abaixo do peso")
-    }if (imc > 1.85 && imc < 24.9){
-        Resultado.setText("Peso normal")
-    }if(imc > 1.85 && imc < 24.9){
-        Resultado.setText("Exesso de Peso")
-    }
+        val resultado = findViewById<TextView>(R.id.campResultado)
 
 
+        calcular.setOnClickListener {
+            val Altura = altura.text.toString().toDouble()
+            val Peso = peso.text.toString().toDouble()
 
+            val imc = (Peso/(Altura*Altura))
+
+            if (imc < 18.5 ){
+                resultado.setText("Abaixo do peso")
+            }if (imc > 18.5 && imc < 24.9){
+                resultado.setText("Peso normal")
+            }if(imc > 25 && imc < 29.9){
+                resultado.setText("Exesso de Peso")
+            }if(imc > 30 && imc < 34.9){
+            resultado.setText("Obsidade grau 1")
+            }if(imc > 35 && imc < 39.9) {
+            resultado.setText("Obsidade grau 2")
+            }if(imc > 40 ) {
+            resultado.setText("Obsidade grau 3")
+            }
+        }
     }
 }
 
