@@ -14,6 +14,9 @@
         android:theme="@style/Theme.CatalogoDigital"
         tools:targetApi="31">
         <activity
+            android:name=".Fde_300w_Page"
+            android:exported="false" />
+        <activity
             android:name=".Fde_600w_Page"
             android:exported="false" />
         <activity

@@ -18,9 +18,10 @@
         app:layout_constraintStart_toStartOf= "parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/toolbar"
-        app:navigationIcon="@drawable/ic_hamburger"
-        >
+        app:navigationIcon="@drawable/ic_hamburger">
+
         <ImageView
+            android:id="@+id/logo_principal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -28,7 +29,7 @@
             android:scaleY="0.6"
             android:src="@drawable/logo"
             />
-<!--            android:contentDescription="@string/content_description_logo_pado"/>-->
+<!--android:contentDescription="@string/content_description_logo_pado"/>-->
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ScrollView
@@ -37,16 +38,17 @@
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainToolBar"
-        >
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:clipToPadding="false"
-            android:orientation="vertical"
-            android:layout_margin="16dp">
+            android:orientation="vertical">
 
 
             <EditText
@@ -56,8 +58,7 @@
                 android:drawableEnd="@drawable/ic_search"
                 android:elevation="2dp"
                 android:hint="@string/search"
-                android:padding="16dp"
-                />
+                android:padding="16dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -69,8 +70,7 @@
                 android:text="@string/o_mundo_cada_vez_mais_digital"
                 android:textColor="#444444"
                 android:textSize="36sp"
-                tools:targetApi="p"
-            />
+                tools:targetApi="p" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -79,8 +79,7 @@
                 android:text="@string/novidades"
                 android:textColor="#444444"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -92,8 +91,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/banner"
-                    />
+                    android:src="@drawable/banner" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -104,9 +102,8 @@
                 android:text="@string/produtos"
                 android:textColor="#444444"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                />
-
+                android:textStyle="bold" />
+            <!--FDE-600W-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fde600wCard"
                 android:layout_width="match_parent"
@@ -117,7 +114,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="123dp"
                     android:orientation="horizontal"
                     android:padding="18dp">
 
@@ -127,8 +124,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="0.25"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/fde600w"
-                        />
+                        android:src="@drawable/fde600w" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -144,18 +140,16 @@
                             android:textColor="#444444"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            tools:targetApi="p"
-                            />
+                            tools:targetApi="p" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="@string/fde_600w_descricao"
+                            android:text="@string/fde_agua_descricao"
                             android:textColor="#444444"
                             android:textSize="12sp"
-                            tools:targetApi="p"
-                            />
+                            tools:targetApi="p" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -164,13 +158,431 @@
                             android:textColor="#444444"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            tools:targetApi="p"
-                            />
+                            tools:targetApi="p" />
 
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+            <!--FDE-300W-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fde300wCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fde300w" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fde_300w_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_agua_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--FDE-500 Pro-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fde500ProCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fde500pro" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fde_500pro_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_fde500pro_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--FDE-201R-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fde201RCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fde201r" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fde_201r_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_fde201r_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--FDE-201-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fde201Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fde201" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fde_201_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_fde201_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--FDS-101-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fds101Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fds101" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fds_101_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_fds101_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--FDS-10-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fds10Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fds10" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fds_10_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_fds10_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--FDV-200-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fdv200Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:orientation="horizontal"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.25"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fdv200v" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/fdv_200_nome"
+                            android:textColor="#444444"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fde_fdv200_descricao"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            tools:targetApi="p" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fde_600w_preco"
+                            android:textColor="#444444"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:targetApi="p" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
     </ScrollView>
