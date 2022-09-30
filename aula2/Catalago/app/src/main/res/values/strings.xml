@@ -30,4 +30,8 @@
     <string name="titulo_page_fde600w">FDE-600W</string>
     <string name="descricao_page_embutir">FECHADURA DIGITAL DE EMBUTIR</string>
     <string name="botao">Comprar agora</string>
+    <string name="titulo_page_fde500_pro">FDE-500 PRO</string>
+    <string name="texto_chave_dsc">Chave de emergência</string>
+    <string name="titulo_page_fde201_r">FDE-201R</string>
+    <string name="descricao_page_embutir_rollete">FECHADURA DIGITAL DE EMBUTIR ROLLETE</string>
 </resources>

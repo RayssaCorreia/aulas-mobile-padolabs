@@ -4,14 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
-import androidx.cardview.widget.CardView
 import com.google.android.material.appbar.MaterialToolbar
 
-class MainActivity : AppCompatActivity() {
+class fde_500_pro_Page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_fde500_pro_page)
 
         val mainToolBar = findViewById<MaterialToolbar>(R.id.mainToolBar)
         mainToolBar.setNavigationOnClickListener{
@@ -33,25 +33,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val fde600wCard = findViewById<CardView>(R.id.fde600wCard);
-        fde600wCard.setOnClickListener{
-            startActivity(Intent(this, Fde_600w_Page::class.java))
+        val btnComprar = findViewById<Button>(R.id.botao300w)
+        btnComprar.setOnClickListener{
+            val toast = Toast.makeText(this,"Ainda não implementado", Toast.LENGTH_LONG)
+            toast.show()
         }
 
-        val fde300wCard = findViewById<CardView>(R.id.fde300wCard);
-        fde300wCard.setOnClickListener{
-            startActivity(Intent(this, Fde_300w_Page::class.java))
+        val home = findViewById<ImageView>(R.id.logo_principal);
+        home.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
         }
-
-        val fde500ProCard = findViewById<CardView>(R.id.fde500ProCard);
-        fde500ProCard.setOnClickListener{
-            startActivity(Intent(this, fde_500_pro_Page::class.java))
-        }
-
-        val fde201rCard = findViewById<CardView>(R.id.fde201RCard);
-        fde201rCard.setOnClickListener{
-            startActivity(Intent(this, Fde_201R_Page::class.java))
-        }
-
     }
 }
