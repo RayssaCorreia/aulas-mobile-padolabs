@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Hello Word",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

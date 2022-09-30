@@ -1,0 +1,50 @@
+<ion-header class="header">
+  <img src="../../assets/Logo.png" alt="logo">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#home">Home</ion-breadcrumb>
+    <ion-breadcrumb href="#cidade">Cidade</ion-breadcrumb>
+    <ion-breadcrumb href="#lista">Lista</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-card class="card">
+    <ion-card-header>
+      <img src="../../assets/Foto.png" alt="FotoLondrina">
+      <p class="sub-title">DESTINO</p>
+      <ion-card-title class="title">LONDRINA, PR</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p class="description">Londrina é um município brasileiro localizado no estado do Paraná, na Região Sul do Brasil, distando 381 km da capital paranaense, Curitiba. É considerada pela CGU a cidade mais transparente do Paraná.</p>
+      <ion-button (click)='goToPage()' class="sub-title" expand="full" >VISUALIZAR CIDADE</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header>
+      <img src="../../assets/Foto2.png" alt="FotoCuritiba">
+      <p class="sub-title">DESTINO</p>
+      <ion-card-title class="title">CURITIBA, PR</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content >
+      <p class="description">Curitiba é a capital do estado do Paraná, na região sul do Brasil. A Torre Panorâmica, que tem um observatório em sua parte superior, destaca-se na silhueta da cidade.
+      <ion-button class="sub-title" expand="full">VISUALIZAR CIDADE</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header>
+      <img src="../../assets/Foto3.png" alt="FotoMaringa">
+      <p class="sub-title">DESTINO</p>
+      <ion-card-title class="title">MARINGÁ, PR</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p class="description">Maringa é um município brasileiro do estado do Paraná, sendo uma cidade média-grande planejada e de urbanização recente.</p>
+      <ion-button class="sub-title" expand="full">VISUALIZAR CIDADE</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
