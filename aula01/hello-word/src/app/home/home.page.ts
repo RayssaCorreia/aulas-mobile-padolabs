@@ -1,6 +1,7 @@
 //! FAZER AS FUNÇÕES PARA ESSA PAGINA
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import {CidadesService} from '../cidades.service';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,26 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router){}
+    //           private cidadesService: CidadesService,
+    // ){
+    //   this.Cidades =[];
+    // }
+
+// ngOnInit() {
+//   this.CidadesService.BuscarCidades().subscribe(data => {
+//     console.log(data);
+//     this.Cidades =data;
+//   });
+// }
+
+  // goToPage(Cidades) {
+  //   console.log(Cidades);
+  //   this.router.navigate(['/cidades'], {sate {data: Cidades}});
+  // }
 
   goToPage() {
-    this.router.navigate(['/cidades']);
-  }
+      console.log();
+      this.router.navigate(['/cidades']);
+    }
 }

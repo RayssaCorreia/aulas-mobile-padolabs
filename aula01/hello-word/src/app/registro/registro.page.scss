@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    justify-content:center;
+    background-color: #19133E;
+    margin-bottom:40px;
+    padding:5px;
+  }
+
+.page{
+    background-color: #19133E;
+    
+    height:100%;
+}
+
+.container{
+    background-color: #19133E;
+    padding:10px;
+}
+
+.formulario{
+    display: flex;
+    background-color:#19133E;
+    flex-direction: column;
+}
+
+.completar{
+    margin: 8px;
+}
+
+.input{
+    height:50px;
+    width:100%;
+    border-radius: 10px;
+    background-color: #2C2656;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255,0);
+}
+
+.button-rg, .button-v{
+    padding-left:6px;
+    padding-right:6px;
+    font-weight: bold;
+}
+
+.button-v{
+    margin-top:100px; 
+    --background: #fff;
+    --color: #2C2656;
+}
+
+.teste{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ion-content{
+    --background: #19133E; 
+}

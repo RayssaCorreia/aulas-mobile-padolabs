@@ -1,0 +1,46 @@
+<body class="page">
+
+  <ion-header class="header">
+    <img src="../../assets/PadoLabsLogo.png" alt="logo" width="150" hight="78">
+  </ion-header>
+  
+  <ion-content> 
+    
+    <div class="container">
+
+      <form class="formulario">
+        <div class="completar">
+          <label for="nome"></label>
+            <input class="input" type="text" id="nome" placeholder=" NOME COMPLETO"/>
+        </div>
+        
+        <div class="completar">
+          <label for="email" name="email"></label>
+          <input class="input" type="text" id="email" placeholder=" EMAIL"/>
+        </div>
+        
+        <div class="completar">
+          <label for="senha"></label>
+          <input class="input" type="password" id="senha" placeholder=" SENHA"/>
+        </div>
+        
+        <div class="completar"> 
+          <label for="uf"></label>
+          <input class="input" type="text" id="uf" placeholder=" UF"/>
+        </div>
+        
+        <div class="completar">
+          <label for="cidade"></label>
+          <input class="input" type="text" id="cidade" placeholder="CIDADE"/>
+        </div>
+        
+        <ion-button Class=" button-rg" expand="block">REGISTRAR</ion-button>
+      </form>
+      
+      
+      <ion-button (click)='goToPage()' class="button-v" expand="block">VOLTAR</ion-button>
+    </div>
+    </ion-content>
+    
+  </body>
+  

@@ -17,6 +17,22 @@ const routes: Routes = [
     path: 'cidades',
     loadChildren: () => import('./cidades/cidades.module').then( m => m.CidadesPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'regioes',
+    loadChildren: () => import('./regioes/regioes.module').then( m => m.RegioesPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
 ];
 
 @NgModule({
