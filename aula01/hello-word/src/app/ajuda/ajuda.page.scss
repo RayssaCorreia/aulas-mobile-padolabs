@@ -1,0 +1,53 @@
+ion-content{
+    --background: #222222;   
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    background-color: #222222;
+    padding:5px;
+    color: #fff;
+    .setaHeader{
+        width: 30px;
+        height: auto;
+    }
+    .espaco{
+        width: 30px;
+    }
+}
+
+// .header.ios.header-ios header-collapse-none hydrated"
+// .page{
+//     background: #222222;
+// }
+
+.titulo{
+    display: flex;
+    justify-content:center;
+    color: #807e7e;
+    flex-direction:column;
+    padding: 0 20px 0 20px;
+    h1{
+        padding-left: 30px;
+    }
+    #linha{
+        width: 100%;
+        border-bottom: 1px solid #807e7e;
+    }
+}
+
+.opcoes{
+    
+    margin: 0 20px 0 20px;
+    .opcaoTxt{
+        display: flex;
+        justify-content:space-between;
+        // background-color: #bd6767;
+        align-items:center;
+        color: #fff;
+    }
+    .setaOpcao{
+        color: #807e7e;
+    }
+}
