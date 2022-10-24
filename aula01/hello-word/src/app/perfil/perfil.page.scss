@@ -1,0 +1,61 @@
+ion-content{
+    --background: #222222;   
+}
+
+#cabecalho{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    color:#fff;
+    background-color:#222222;  
+}
+
+h1, p{
+    color: #fff;
+}
+
+ion-icon {
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 12px;
+}
+
+.titlePage, .datas, .values {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 20px;
+}
+
+.dadosTopic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.datas, .values {
+    border-top: 1px solid #807e7e;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.email {
+    color: #807e7e;
+}
+
+.textDiferente {
+    color: #807e7e;
+}
