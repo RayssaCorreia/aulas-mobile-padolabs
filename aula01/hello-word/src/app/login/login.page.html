@@ -19,11 +19,11 @@
                 <input class="input" type="password" id="SENHA" placeholder=" SENHA"/>
             </div>
 
-            <ion-button Class=" button-rg" expand="block">ENTRAR</ion-button>
+            <ion-button (click)='goToPage("regioes")' Class=" button-rg" expand="block">ENTRAR</ion-button>
             </form>
             
             <div class="texto">
-                <p>NÃO TEM CONTA  <a href="http://localhost:8100/registro"> <b>REGISTRE-SE </b></a></p>
+                <p>NÃO TEM CONTA  <a (click)='goToPage("registro")'> <b>REGISTRE-SE </b></a></p>
             </div>
         </div>
     </ion-content>

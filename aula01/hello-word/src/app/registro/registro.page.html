@@ -34,11 +34,11 @@
           <input class="input" type="text" id="cidade" placeholder="CIDADE"/>
         </div>
         
-        <ion-button Class=" button-rg" expand="block">REGISTRAR</ion-button>
+        <ion-button (click)='goToPage("login")' Class=" button-rg" expand="block">REGISTRAR</ion-button>
       </form>
       
       
-      <ion-button (click)='goToPage()' class="button-v" expand="block">VOLTAR</ion-button>
+      <ion-button (click)='goToPage("login")' class="button-v" expand="block">VOLTAR</ion-button>
     </div>
     </ion-content>
     

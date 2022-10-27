@@ -6,7 +6,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./regioes/regioes.module').then( m => m.RegioesPageModule)
   },
   {
     path: '',
@@ -36,6 +36,10 @@ const routes: Routes = [
   {
     path: 'ajuda',
     loadChildren: () => import('./ajuda/ajuda.module').then( m => m.AjudaPageModule)
+  },
+  {
+    path: 'cidade',
+    loadChildren: () => import('./cidade/cidade.module').then( m => m.CidadePageModule)
   },
 ];
 
