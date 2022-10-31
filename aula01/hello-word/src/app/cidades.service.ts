@@ -7,11 +7,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CidadesService {
 
-  constructor(private http: HttpClient) { }
-
   httpOptions = {
     headers: new HttpHeaders({ 'x-bin-meta': 'false' })
-    };
+  };
+  
+  constructor(private http: HttpClient) { }
 
     BuscarCidades(): Observable<object> {
       const dataUrl = 'https://api.jsonbin.io/v3/b/633dd6fa65b57a31e68c063a';

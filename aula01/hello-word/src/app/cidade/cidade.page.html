@@ -10,7 +10,11 @@
     <ion-breadcrumb href="#londrina">Londrina</ion-breadcrumb>
   </ion-breadcrumbs>
 
-  <div class="cidade" *ngFor="let myData of getData()">
+<ion-content>
+  {{Cidade.Cidade}}  
+</ion-content>
+
+  <!-- <div class="cidade" *ngFor="let myData of getData()">
     <ion-card class="card">
       <ion-card-header>
         <img src="../../assets/Foto.png" alt="FotoLondrina">
@@ -57,7 +61,7 @@
         </div>
       </ion-accordion>
     </ion-accordion-group>
-  </div>
+  </div> -->
 
   <ion-button (click)='goToPage("cidades")' class="sub-title" expand="full">VOLTAR</ion-button>
 </ion-content>

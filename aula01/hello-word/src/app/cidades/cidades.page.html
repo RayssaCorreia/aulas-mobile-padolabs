@@ -10,16 +10,16 @@
       <ion-breadcrumb href="#cidades">norte</ion-breadcrumb>
     </ion-breadcrumbs>
   
-    <div class="cidades" *ngFor="let myData of getData()">
+    <div class="cidades" *ngFor="let cidade of Cidades">
       <ion-card class="card">
         <ion-card-header>
-          <img src="../../assets/Foto.png" alt="FotoLondrina">
+          <img src="{{cidade.imagem}}" alt="FotoLondrina">
           <p class="sub-title">DESTINO</p>
-          <ion-card-title class="title">{{myData.destino}}</ion-card-title>
+          <ion-card-title class="title">{{cidade.Cidade}}, {{cidade.UF}}</ion-card-title>
         </ion-card-header>
       
         <ion-card-content>
-          <p class="description">{{myData.description}}</p>
+          <p class="description">{{cidade.descricao_curta}}</p>
           <ion-button (click)='goToPage(myData.cidade)' class="sub-title" expand="full" >VISUALIZAR CIDADE</ion-button>
         </ion-card-content>
       </ion-card>
