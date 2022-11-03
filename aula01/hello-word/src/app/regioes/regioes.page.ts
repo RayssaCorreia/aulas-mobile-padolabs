@@ -13,50 +13,38 @@ export class RegioesPage implements OnInit {
   ngOnInit() {
   }
 
-  goToPage(URL) {
-    this.router.navigate(['/' + URL]);
+  goToPage(cidades) {
+    this.router.navigate(['/cidades'], {state:{data: cidades}});
+  }
+
+  goToPageMenu(URL){
+    this.router.navigate(['/'+ URL])
   }
 
   private data: Regioes [] = [
     {
       id:1,
-      title:'NORTE', 
-      url: 'cidades',
+      title:'Norte',
     },
     {
       id:2,
-      title:'SUL', 
-      url: 'sul',
-    },
-    {
-      id:3,
-      title:'LESTE', 
-      url: 'leste',
-    },
-    {
-      id:4,
-      title:'OESTE', 
-      url: 'oeste',
+      title:'Sul', 
+     
     },
     {
       id:5,
-      title:'NORDESTE', 
-      url: 'nordeste',
+      title:'Nordeste', 
+     
     },
     {
       id:6,
-      title:'SUDESTE', 
-      url: 'sudeste',
+      title:'Sudeste', 
+     
     },
     {
       id:7,
-      title:'SUDOESTE', 
-      url: 'sudoeste',
-    },
-    {
-      id:8,
-      title:'NOROESTE', 
-      url: 'nordeste',
+      title:'Centroeste', 
+      
     },
   ];
 
@@ -71,5 +59,5 @@ export class RegioesPage implements OnInit {
   interface Regioes{
     id: number;
     title: string;
-    url: string;
+    
   }

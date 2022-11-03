@@ -6,62 +6,65 @@
 
   <ion-breadcrumbs>
     <ion-breadcrumb href="#regioes">Região</ion-breadcrumb>
-    <ion-breadcrumb href="#cidades"> norte</ion-breadcrumb>
-    <ion-breadcrumb href="#londrina">Londrina</ion-breadcrumb>
+    <ion-breadcrumb (click)='goToPage()'>{{cidade.cityRegion}}</ion-breadcrumb>
+    <ion-breadcrumb>{{cidade.cityName}}</ion-breadcrumb>
   </ion-breadcrumbs>
 
-<ion-content>
-  {{Cidade.Cidade}}  
+
+  <ion-card class="card">
+    <ion-card-header>
+      <img src="{{cidade.cityImage}}" alt="FotoLondrina">
+      <p class="sub-title">DESTINO</p>
+      <ion-card-title class="title">{{cidade.cityName}}, {{cidade.cityUf}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p class="description">{{cidade.cityDescription}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-accordion-group class="conteiner-lists">
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <b>População</b>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p class="description">{{cidade.cityPopulation}}</p>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <b>Area total</b>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p class="description">{{cidade.cityArea}}</p>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <b >Prefeito</b>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p class="description">{{cidade.cityMayor}}</p>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="fourth">
+      <ion-item slot="header" color="light">
+        <b>Altitude</b>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p class="description">{{cidade.cityAltitude}}</p>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  
+
+  <ion-button (click)='goToPage()' class="sub-title" expand="full">VOLTAR</ion-button>
 </ion-content>
-
-  <!-- <div class="cidade" *ngFor="let myData of getData()">
-    <ion-card class="card">
-      <ion-card-header>
-        <img src="../../assets/Foto.png" alt="FotoLondrina">
-        <p class="sub-title">DESTINO</p>
-        <ion-card-title class="title">{{myData.destino}}</ion-card-title>
-      </ion-card-header>
-    
-      <ion-card-content>
-        <p class="description">{{myData.description}}</p>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-accordion-group class="conteiner-lists">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <b>População</b>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          <p class="description">{{myData.populacao}}</p>
-        </div>
-      </ion-accordion>
-      <ion-accordion value="second">
-        <ion-item slot="header" color="light">
-          <b>Area total</b>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          <p class="description">{{myData.area}}</p>
-        </div>
-      </ion-accordion>
-      <ion-accordion value="third">
-        <ion-item slot="header" color="light">
-          <b >Prefeito</b>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          <p class="description">{{myData.prefeito}}</p>
-        </div>
-      </ion-accordion>
-      <ion-accordion value="fourth">
-        <ion-item slot="header" color="light">
-          <b>Altitude</b>
-        </ion-item>
-        <div class="ion-padding" slot="content">
-          <p class="description">{{myData.autitude}}</p>
-        </div>
-      </ion-accordion>
-    </ion-accordion-group>
-  </div> -->
-
-  <ion-button (click)='goToPage("cidades")' class="sub-title" expand="full">VOLTAR</ion-button>
-</ion-content>
+<ion-footer>
+  <div class="footer">
+    <ion-icon class="footer_image" (click)='goToPageMenu("regioes")' name="home-outline"></ion-icon>
+    <ion-icon class="footer_image" (click)='goToPageMenu("favorito")'name="star-outline"></ion-icon>
+    <ion-icon class="footer_image" (click)='goToPageMenu("perfil")'name="person-outline"></ion-icon>
+  </div>
+</ion-footer>
