@@ -8,34 +8,34 @@
     
     <div class="container">
 
-      <form class="formulario">
+     
         <div class="completar">
-          <label for="nome"></label>
-            <input class="input" [(ngModel)]="name" type="text" id="nome" placeholder=" NOME COMPLETO"/>
+          <!-- <label for="nome"></label> -->
+          <ion-input class="input" [(ngModel)]="userName" type="text" placeholder=" NOME COMPLETO"></ion-input>
         </div>
         
         <div class="completar">
-          <label for="email" name="email"></label>
-          <input class="input" [(ngModel)]="email" type="text" id="email" placeholder=" EMAIL"/>
+          <!-- <label for="email" name="email"></label> -->
+          <ion-input class="input" [(ngModel)]="userEmail" type="text"  placeholder=" EMAIL"></ion-input>
         </div>
         
         <div class="completar">
-          <label for="senha"></label>
-          <input class="input" [(ngModel)]="password" type="password" id="senha" placeholder=" SENHA"/>
+          <!-- <label for="senha"></label> -->
+          <ion-input class="input" [(ngModel)]="userPassword" type="password"  placeholder=" SENHA"></ion-input>
         </div>
         
         <div class="completar"> 
-          <label for="uf"></label>
-          <input class="input" [(ngModel)]="uf" type="text" id="uf" placeholder=" UF"/>
+          <!-- <label for="uf"></label> -->
+          <ion-input class="input" [(ngModel)]="userUf" type="text" placeholder=" UF"></ion-input>
         </div>
         
         <div class="completar">
-          <label for="cidade"></label>
-          <input class="input" [(ngModel)]="city" type="text" id="cidade" placeholder="CIDADE"/>
+          <!-- <label for="cidade"></label> -->
+          <ion-input class="input" [(ngModel)]="userCity" type="text" placeholder="CIDADE"></ion-input>
         </div>
         
         <ion-button (click)="onSubmit()" Class=" button-rg" expand="block">REGISTRAR</ion-button>
-      </form>
+   
       
       
       <ion-button (click)='goToPage("login")' class="button-v" expand="block">VOLTAR</ion-button>

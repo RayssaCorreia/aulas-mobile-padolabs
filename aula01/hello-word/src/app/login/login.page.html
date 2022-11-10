@@ -1,33 +1,31 @@
 <body class="page">
 
     <ion-header class="header">
-        <img src="../../assets/PadoLabsLogo.png" alt="logo" width="150" hight="78">
+        <img src="../../assets/PadoLabsLogo.png" alt="logo" width="150" hight="78" alt="">
+        
     </ion-header>
         
     <ion-content> 
         
         <div class="container">
-
-            <form class="formulario">
                 <div class="completar"> 
                     <!-- <label for="login"></label>
                     <input class="input" type="text" id="uf" placeholder=" EMAIL"/> -->
-                    <ion-input class="input" [(ngModel)]="email" placeholder="  Login"></ion-input>
+                    <ion-input class="input" [(ngModel)]="userEmail" placeholder="  Login"></ion-input>
                 </div>
                 
                 <div class="completar">
                     <!-- <label for="senha"></label>
                     <input class="input" type="password" id="SENHA" placeholder=" SENHA"/> -->
-                    <ion-input class="input" [(ngModel)]="password" placeholder="  Senha" type="password"></ion-input>
+                    <ion-input class="input" [(ngModel)]="userPassword" placeholder="  Senha" type="password"></ion-input>
                 </div>
 
             <!-- <ion-button (click)="onSubmit()" Class=" button-rg" expand="block">ENTRAR</ion-button> -->
                 <ion-button class="button-ng" (click)="onSubmit()"> ENTRAR</ion-button>
-            </form>
             
             <div class="texto">
-                <p>NÃO TEM CONTA  <a (click)="goToPage()" > <b>REGISTRE-SE </b></a></p>
-                <!-- <ion-button class="p" (click)="goToPage()" fill="clear"> NÃO TEM CONTA? <b>REGISTRE-SE </b></ion-button> -->
+                <p>NÃO TEM CONTA   <b  (click)="goToPage('registro')"> REGISTRE-SE </b></p>
+                <!-- <ion-button (click)="goToPage()" fill="clear"> NÃO TEM CONTA? <b>REGISTRE-SE </b></ion-button> -->
             </div>
         </div>
 

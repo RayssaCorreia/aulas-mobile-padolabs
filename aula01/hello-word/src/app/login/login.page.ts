@@ -10,25 +10,25 @@ import { UserService } from '../user.service';
 export class LoginPage implements OnInit {
 
   constructor(private router: Router, private UserService: UserService) { }
-  public email: string = undefined;
-  public password: string = undefined;
+  public userEmail: string = undefined;
+  public userPassword: string = undefined;
 
   ngOnInit() {
   }
 
   onSubmit() {
     const data = {
-      email: this.email,
-      password: this.password,
+      userEmail: this.userEmail,
+      userPassword: this.userPassword,
     }
     this.UserService.userLogin(data).subscribe( data => {
-      this.router.navigate(['/regioes']);
+      this.router.navigate(['/home']);
     })
   }
 
 
-  goToPage() {
-    this.router.navigate(['/registro']);
+  goToPage(URL){
+    this.router.navigate(['/'+ URL])
   }
   
 }

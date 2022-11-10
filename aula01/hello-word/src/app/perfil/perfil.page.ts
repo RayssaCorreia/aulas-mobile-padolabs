@@ -13,7 +13,7 @@ export class PerfilPage implements OnInit {
   ngOnInit() {
   }
 
-  goToPage(URL){
-    this.router.navigate(['/'+ URL])
+  goToPage(){
+    this.router.navigate(['registro'])
   }
 }

@@ -10,11 +10,11 @@ import { UserService } from '../user.service';
 export class RegistroPage implements OnInit {
 
   constructor(private router: Router, private UserService: UserService) { }
-  public email: string = undefined;
-  public password: string = undefined;
-  public uf: string = undefined;
-  public name: string = undefined;
-  public city: string = undefined;
+  public userName: string = undefined;
+  public userEmail: string = undefined;
+  public userPassword: string = undefined;
+  public userUf: string = undefined;
+  public userCity: string = undefined;
 
 
   ngOnInit() {
@@ -22,11 +22,11 @@ export class RegistroPage implements OnInit {
 
   onSubmit() {
     const data = {
-      email: this.email,
-      password: this.password,
-      Uf: this.uf,
-      Name: this.name,
-      City: this.city,
+      userName: this.userName,
+      userEmail: this.userEmail,
+      userPassword: this.userPassword,
+      userUf: this.userUf,
+      userCity: this.userCity,
     }
     this.UserService.userRegister(data).subscribe( data => {
       this.router.navigate(['/login']);
